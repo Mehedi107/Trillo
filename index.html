@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <title>trillo &mdash; Your all-in-one booking app</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
   <body>
     <div class="container">
@@ -18,7 +18,7 @@
         </div>
 
         <form class="header__search" action="#">
-          <input class="header__search__input" type="text" placeholder="Search..." />
+          <input class="header__search__input" type="text" placeholder="Search hotels" />
           <button class="header__search__button">
             <svg class="search__icon">
               <use xlink:href="img/symbol-defs.svg#icon-magnifying-glass"></use>
@@ -47,10 +47,212 @@
       </header>
 
       <div class="content">
-        <nav class="nav">nav</nav>
-        <main class="main">main</main>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <svg class="nav__icon">
+                <use xlink:href="img/symbol-defs.svg#icon-home"></use>
+              </svg>
+              <a class="nav__link" href="#">HOTEL</a>
+            </li>
+            <li class="nav__item">
+              <svg class="nav__icon">
+                <use xlink:href="img/symbol-defs.svg#icon-aircraft"></use>
+              </svg>
+              <a class="nav__link" href="#">FLIGHT</a>
+            </li>
+            <li class="nav__item">
+              <svg class="nav__icon">
+                <use xlink:href="img/symbol-defs.svg#icon-key"></use>
+              </svg>
+              <a class="nav__link" href="#">CAR RENTAL</a>
+            </li>
+            <li class="nav__item">
+              <svg class="nav__icon">
+                <use xlink:href="img/symbol-defs.svg#icon-map"></use>
+              </svg>
+              <a class="nav__link" href="#">TOURS</a>
+            </li>
+          </ul>
+          <footer class="footer">
+            <p class="footer__text">&copy; 2023 Trillo. All rights reserve</p>
+          </footer>
+        </nav>
+        <!-- Main -->
+        <main class="main">
+          <!-- Hotel Images -->
+          <div class="hotel__img__container">
+            <div class="hotel__img__box">
+              <img class="hotel__img" src="img/hotel-1.jpg" alt="hotel image 1" />
+            </div>
+            <div class="hotel__img__box">
+              <img class="hotel__img" src="img/hotel-2.jpg" alt="hotel image 2" />
+            </div>
+            <div class="hotel__img__box">
+              <img class="hotel__img" src="img/hotel-3.jpg" alt="hotel image 3" />
+            </div>
+          </div>
+          <!-- Hotel's Name and review -->
+          <div class="hotel__info">
+            <div class="hotel__info__title">
+              <h1 class="hotel__name">hotel las palmas</h1>
+              <div class="rating__list">
+                <svg class="rating__icon">
+                  <use xlink:href="img/symbol-defs.svg#icon-star"></use>
+                </svg>
+                <svg class="rating__icon">
+                  <use xlink:href="img/symbol-defs.svg#icon-star"></use>
+                </svg>
+                <svg class="rating__icon">
+                  <use xlink:href="img/symbol-defs.svg#icon-star"></use>
+                </svg>
+                <svg class="rating__icon">
+                  <use xlink:href="img/symbol-defs.svg#icon-star"></use>
+                </svg>
+                <svg class="rating__icon">
+                  <use xlink:href="img/symbol-defs.svg#icon-star"></use>
+                </svg>
+              </div>
+            </div>
+            <address class="hotel__location">
+              <div class="location">
+                <svg class="location__icon">
+                  <use xlink:href="img/symbol-defs.svg#icon-location-pin"></use>
+                </svg>
+                <span class="location__text">Albuferia, Portugal</span>
+              </div>
+
+              <div class="rating">
+                <span class="rating__num">8.6</span>
+                <span class="rating__text">496 votes</span>
+              </div>
+            </address>
+          </div>
+          <!-- Hotel Overview -->
+          <div class="hotel__overview">
+            <!-- Hotel Facilities -->
+            <div class="hotel__facilities">
+              <!-- About Hotel -->
+              <div class="about__hotel">
+                <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus nisi, quibusdam accusantium ratione unde minus consequuntur itaque. Nesciunt nam tempore deleniti corrupti earum molestiae eos saepe atque tenetur expedita.</p>
+                <br />
+                <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus nisi, quibusdam accusantium ratione unde minus</p>
+              </div>
+              <!-- Hotel Facilities -->
+              <div class="about__facilities">
+                <ul class="facilities__list">
+                  <li class="facilities__item">
+                    <svg class="chevron__icon">
+                      <use xlink:href="img/symbol-defs.svg#icon-chevron-thin-right"></use>
+                    </svg>
+                    <p>Close to the beach</p>
+                  </li>
+                  <li class="facilities__item">
+                    <svg class="chevron__icon">
+                      <use xlink:href="img/symbol-defs.svg#icon-chevron-thin-right"></use>
+                    </svg>
+                    <p>Free airport shuttle</p>
+                  </li>
+                  <li class="facilities__item">
+                    <svg class="chevron__icon">
+                      <use xlink:href="img/symbol-defs.svg#icon-chevron-thin-right"></use>
+                    </svg>
+                    <p>Air conditioning and heating</p>
+                  </li>
+                  <li class="facilities__item">
+                    <svg class="chevron__icon">
+                      <use xlink:href="img/symbol-defs.svg#icon-chevron-thin-right"></use>
+                    </svg>
+                    <p>We speak all language</p>
+                  </li>
+                </ul>
+                <ul class="facilities__list">
+                  <li class="facilities__item">
+                    <svg class="chevron__icon">
+                      <use xlink:href="img/symbol-defs.svg#icon-chevron-thin-right"></use>
+                    </svg>
+                    <p>Breakfast included</p>
+                  </li>
+                  <li class="facilities__item">
+                    <svg class="chevron__icon">
+                      <use xlink:href="img/symbol-defs.svg#icon-chevron-thin-right"></use>
+                    </svg>
+                    <p>Close to the beach</p>
+                  </li>
+                  <li class="facilities__item">
+                    <svg class="chevron__icon">
+                      <use xlink:href="img/symbol-defs.svg#icon-chevron-thin-right"></use>
+                    </svg>
+                    <p>Close to the beach</p>
+                  </li>
+                  <li class="facilities__item">
+                    <svg class="chevron__icon">
+                      <use xlink:href="img/symbol-defs.svg#icon-chevron-thin-right"></use>
+                    </svg>
+                    <p>Close to the beach</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- Recommendation -->
+              <div class="recommendation">
+                <p class="recommendation__text">Lucy and 3 others recommended this hotel</p>
+                <div class="recommendation__img__box">
+                  <img class="recommendation__user__img" src="img/user-1.jpg" alt="user image 1" />
+                  <img class="recommendation__user__img" src="img/user-2.jpg" alt="user image 2" />
+                  <img class="recommendation__user__img" src="img/user-3.jpg" alt="user image 3" />
+                  <img class="recommendation__user__img" src="img/user-4.jpg" alt="user image 4" />
+                  <img class="recommendation__user__img" src="img/user-5.jpg" alt="user image 5" />
+                  <img class="recommendation__user__img" src="img/user-6.jpg" alt="user image 6" />
+                </div>
+              </div>
+            </div>
+            <!-- Testimonials -->
+            <div class="hotel__testimonial">
+              <!-- Testimonial 1 -->
+              <div class="testimonial testimonial--1">
+                <div class="testimonial__text">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit voluptatibus vel repellendus illum libero!</p>
+                </div>
+                <div class="testimonial__user__info">
+                  <div class="testimonial__user">
+                    <img class="testimonial__user__img" src="img/user-1.jpg" alt="testimonial user 1" />
+                    <div class="testimonial__user__text">
+                      <p class="testimonial__user__name">nick smith</p>
+                      <span class="testimonial__user__date">Feb 23th, 2023</span>
+                    </div>
+                  </div>
+                  <div class="testimonial__user__rating">
+                    <span class="testimonial__user__rating__num">7.8</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="testimonial">
+                <div class="testimonial__text">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit voluptatibus vel repellendus illum libero!</p>
+                </div>
+                <div class="testimonial__user__info">
+                  <div class="testimonial__user">
+                    <img class="testimonial__user__img" src="img/user-2.jpg" alt="testimonial user 2" />
+                    <div class="testimonial__user__text">
+                      <p class="testimonial__user__name">mary thomas</p>
+                      <span class="testimonial__user__date">Jun 12th, 2023</span>
+                    </div>
+                  </div>
+                  <div class="testimonial__user__rating">
+                    <span class="testimonial__user__rating__num">9.3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Book Now -->
+          <div class="booking">
+            <h2 class="booking__text">GOOD NEW! WE HAVE 4 FREE ROOM FOR YOUR SELECTED DATES</h2>
+            <button class="button-87" role="button">BOOK NOW</button>
+          </div>
+        </main>
       </div>
     </div>
-    #
   </body>
 </html>
