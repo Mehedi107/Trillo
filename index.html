@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A simple application for ..." />
+    <meta name="description" content="A simple all-in-one hotel booking web app" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-    <title>trillo &mdash; Your all-in-one booking app</title>
+    <title>Trillo &mdash; Your all-in-one booking app</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
   <body>
     <div class="container">
+      <!-- Header -->
       <header class="header">
         <div>
           <img class="logo" src="img/logo.png" alt="trillo logo" />
@@ -19,7 +19,7 @@
 
         <form class="header__search" action="#">
           <input class="header__search__input" type="text" placeholder="Search hotels" />
-          <button class="header__search__button">
+          <button class="header__search__button" aria-label="Search button">
             <svg class="search__icon">
               <use xlink:href="img/symbol-defs.svg#icon-magnifying-glass"></use>
             </svg>
@@ -27,26 +27,28 @@
         </form>
 
         <nav class="user-nav">
-          <button class="user-nav__item user-nav__item--1">
+          <button class="user-nav__item user-nav__item--1" aria-label="bookmark button">
             <svg class="user-nav__icon">
               <use xlink:href="img/symbol-defs.svg#icon-bookmark"></use>
             </svg>
             <span class="user-nav__notification">7</span>
           </button>
-          <button class="user-nav__item user-nav__item--2">
+          <button class="user-nav__item user-nav__item--2" aria-label="chat button">
             <svg class="user-nav__icon">
               <use xlink:href="img/symbol-defs.svg#icon-chat"></use>
             </svg>
             <span class="user-nav__notification">13</span>
           </button>
-          <button class="user-nav__item user-nav__item--3">
+          <button class="user-nav__item user-nav__item--3" aria-label="user button">
             <img class="user__img" src="img/user.webp" alt="user image" />
             <span class="user__name">mehedi</span>
           </button>
         </nav>
       </header>
 
+      <!-- Content -->
       <div class="content">
+        <!-- Side Navigation -->
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -138,7 +140,7 @@
                 <br />
                 <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus nisi, quibusdam accusantium ratione unde minus</p>
               </div>
-              <!-- Hotel Facilities -->
+              <!-- About Facilities -->
               <div class="about__facilities">
                 <ul class="facilities__list">
                   <li class="facilities__item">
@@ -249,7 +251,7 @@
           <!-- Book Now -->
           <div class="booking">
             <h2 class="booking__text">GOOD NEW! WE HAVE 4 FREE ROOM FOR YOUR SELECTED DATES</h2>
-            <button class="button__book" role="button">BOOK NOW</button>
+            <button class="button__book" role="button" aria-label="book now button">BOOK NOW</button>
           </div>
         </main>
       </div>
